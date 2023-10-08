@@ -1,7 +1,20 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
 const pageTitle="关于我";
+const skillColor = "navy";
 ---
+
+<style define:vars={{skillColor}}>
+	h1 {
+	  color: purple;
+	  font-size: 4rem;
+	}
+	.skill {
+	  color: green;
+	  color: var(--skillColor);
+	  font-weight: bold;
+	}
+  </style>
 
 <Layout
 	title="About Me"
@@ -9,7 +22,7 @@ const pageTitle="关于我";
 	pubDate={new Date('August 08 2021')}
 	heroImage="/blog-placeholder-about.jpg"
 >
-	<h1>{pageTitle}</h1>
+	<h1 class="skill">{pageTitle}</h1>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
