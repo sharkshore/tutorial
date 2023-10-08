@@ -1,7 +1,4 @@
----
-import '../styles/global.css';
 
----
 
 # 我的第一篇博客文章
 
